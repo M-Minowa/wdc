@@ -9,15 +9,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color: $text_main;
-    background-color: #ffffff;
-    font-family: $font_jp;
-    font-weight: 400;
+    color: $text_color;
+    background-color: $background_main;
+    font-family: $font-montserrat;
+    font-feature-settings: "palt";
     -webkit-font-smoothing: antialiased;
     line-height: 1;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     position: relative;
 }
 img{
