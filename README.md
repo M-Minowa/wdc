@@ -1,12 +1,12 @@
-# tasaki_test
+# wdc
 
-JDリーグのTASAKI LPのコーディングテスト
+wdcのコーディング練習
 
-[figmaデータ](https://www.figma.com/file/dcVTffcPOnFDcj4Qtttf5y/TASAKI-LP?node-id=1%3A66)
+[XD](https://webdesigner-go.com/coding-practice-files/intermediate01/wdc.xd)
 
 ## プレビュー
 
-https://tasaki-test.netlify.app
+wdc-site.netlify.app
 
 ## 環境構築
 
