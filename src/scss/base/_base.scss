@@ -1,0 +1,46 @@
+/*
+base
+---------------*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    color: $text_main;
+    background-color: #ffffff;
+    font-family: $font_jp;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    position: relative;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.pc{
+    display: block;
+    @include tab{
+        display: none;
+    }
+}
+
+.tab{
+    display: none;
+    @include tab{
+        display: block;
+    }
+}
+
+.sp{
+    display: none;
+    @include sp{
+        display: block;
+    }
+}

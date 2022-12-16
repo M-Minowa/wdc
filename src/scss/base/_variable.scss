@@ -1,0 +1,61 @@
+/*
+variables
+---------------*/
+
+// color
+
+// grayscale
+$grayscale_white: #ffffff;
+$grayscale_gray100: #FBFBFB;
+$grayscale_gray200: #F6F6F6;
+$grayscale_black: #333333;
+
+// text
+$text_main: #211815;
+$text_sub: #999999;
+
+// background
+$background_beigu: #F3EFE6;
+$background_gray: #F6F6F6;
+
+// specials
+$specials_border: #DADADA;
+$specials_placeholder: #B6B6B6;
+$specials_link: #076ACD;
+$specials_alert: #DF1818;
+$specials_west: #5FBDAF;
+$specials_east: #E5AA12;
+
+// thanks
+$thanks_main: #D3275C;
+$thanks_border: #7D1736;
+$thanks_hover: #A81F49;
+
+// individuality
+$individuality_main: #F9EC4E;
+
+// health
+$health_main: #009EE2;
+
+// expression
+$expression_main: #9AC043;
+
+// gradient
+$gradient_horizon: linear-gradient(to right, #E01E5A 30%,#36C5F0 25%,#36C5F0 50%,#F9EC4E 50%, #F9EC4E 75%, #9AC043 75%,#9AC043 100%);
+
+// sns
+$sns_facebook: #1778F2;
+$sns_twitter: #1D9BF0;
+$sns_youtube: #FF0302;
+
+// shadow
+$shadow: 0 2px 14px rgba(0,0,0,0.2);
+$shadow_small: 0 1px 4px rgba(0,0,0,0.2);
+$focus: 0 0 0 4px rgba(41,182,246,0.4);
+
+// font
+$font_jp: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+
+// breakpoint
+$breakpoint_sp: 767px;
+$breakpoint_tab: 959px;
