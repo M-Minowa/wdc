@@ -1,0 +1,77 @@
+.mv {
+    background: $gradient_bg;
+
+    &__inner {
+        max-width: 1240px;
+        height: 700px;
+        padding: 0 64px;
+        margin: 0 auto;
+        background-image: url(../../images/mv.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 560px 737px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__titlearea {
+        color: $text_color;
+        position: relative;
+
+        &::after {
+            display: block;
+            content: "";
+            background-image: url(../../images/teiji-de-kaerumon.svg);
+            width: 326px;
+            height: 68px;
+            position: absolute;
+            right: 60px;
+            bottom: 30px;
+            transform: rotate(-13deg);
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1;
+        color: $color_main;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-size: 10rem;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    &__date {
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: 0.07em;
+    }
+
+    &__btn {
+        margin-top: 24px;
+    }
+
+    &__speaker-name {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 2.1rem;
+        font-weight: bold;
+        line-height: 1;
+
+        &-small {
+            font-size: 1.6rem;
+        }
+
+        &-label {
+            font-size: 1.4rem;
+        }
+    }
+}
