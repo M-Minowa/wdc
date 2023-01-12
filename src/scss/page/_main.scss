@@ -15,4 +15,10 @@
     border-radius: 50px;
     box-shadow: 0 10px 0 #dd118e;
     transition: all 0.3s;
+
+    @include sp{
+        width: 180px;
+        padding: 20px 0;
+        font-size: 1.6rem;
+    }
 }
