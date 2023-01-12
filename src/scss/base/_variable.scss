@@ -3,6 +3,7 @@ variables
 ---------------*/
 
 // color
+$color_main: #D136D1;
 
 // grayscale
 $grayscale_white: #ffffff;
@@ -13,10 +14,13 @@ $grayscale_black: #333333;
 // text
 $text_main: #211815;
 $text_sub: #999999;
+$text_color: #ffffff;
 
 // background
 $background_beigu: #F3EFE6;
 $background_gray: #F6F6F6;
+$background_main: #141414;
+$background_gradient: linear-gradient( 135deg, #0e002e 0%, #1e092b 23%, #320c65 49%, #a01b7c 80%, #c21780 100% );;
 
 // specials
 $specials_border: #DADADA;
@@ -54,6 +58,7 @@ $shadow_small: 0 1px 4px rgba(0,0,0,0.2);
 $focus: 0 0 0 4px rgba(41,182,246,0.4);
 
 // font
+$font-montserrat: "Montserrat", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 $font_jp: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 
 // breakpoint

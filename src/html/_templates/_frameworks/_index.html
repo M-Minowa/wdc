@@ -19,9 +19,12 @@
   <meta property="og:url" content="https://jdleague.jp/special/tasaki/">
   <meta property="og:image" content="https://jdleague.jp/images/common/tasaki_ogp_image.png">
   <meta property="og:site_name" content="JD.LEAGUE（JDリーグ）公式サイト">
-  <link rel="icon" href="images/common/favicon.ico">
+  <link rel="icon" href="images/common/favicon.png">
   <link rel="canonical" href="">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   {% block css %}{% endblock %}
   <script> </script> <!-- Chromeのページロード時のtransition動作バグ対策 -->
 </head>
@@ -29,9 +32,9 @@
   <div id="wrap">
     {% include "_templates/_layouts/_header.html" %}
     <main class="contents">
-      {% block body %}{% endblock %}
+      <!-- {% block body %}{% endblock %} -->
     </main>
-    {% include "_templates/_layouts/_footer.html" %}
+    <!-- {% include "_templates/_layouts/_footer.html" %} -->
   </div>
   {% include "_templates/_foundation/_js.html" %}
   {% block js %}{% endblock %}
