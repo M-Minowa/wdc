@@ -13,6 +13,12 @@
         display: flex;
         align-items: center;
         position: relative;
+        @include sp{
+            height: 450px;
+            padding: 0 30px;
+            background-size: contain;
+            background-position: right -60px bottom;
+        }
     }
 
     &__titlearea {
@@ -29,6 +35,14 @@
             right: 50px;
             bottom: 60px;
             transform: rotate(-13deg);
+            @include sp{
+                width: 163px;
+                height: 31px;
+                right: 20px;
+                bottom: 78px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
     }
 
@@ -41,6 +55,7 @@
     }
 
     &__title {
+        // ウィンドウ幅で文字サイズが変わる書き方↓
         font-size: clamp(24px, 10vw, 100px);
         font-weight: bold;
         line-height: 1;
@@ -73,13 +88,22 @@
         font-size: 2.1rem;
         font-weight: bold;
         line-height: 1;
+        @include sp{
+            font-size: 1.2rem;
+        }
 
         &-small {
             font-size: 1.6rem;
+            @include sp{
+                font-size: 0.8em;
+            }
         }
 
         &-label {
             font-size: 1.4rem;
+            @include sp{
+                font-size: 1rem;
+            }
         }
     }
 }
