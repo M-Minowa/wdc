@@ -1,20 +1,22 @@
 <section id="about" class="section about">
   <div class="container">
     <h2 class="section__title">
-      about<br>
+      about
       <span class="section__subtitle">イベントについて</span>
     </h2>
     <div class="about__inner">
-      <figure class="about__image">
-        <img src="images/about.jpg" alt="aboutイメージ">
-      </figure>
+      <picture class="about__image">
+        <source srcset="images/about.webp" type=“image/webp”>
+        <img src="images/about.jpg" alt="aboutイメージ" loading="lazy">
+      </picture>
       <div class="about__detail">
         <div class="about__subtitle">テーマ</div>
         <h3 class="about__title">定時で帰る</h3>
         <p class="about__text">
-          残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！ さぁ、Let's go home now!
+          残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！<br>
+          さぁ、Let's go home now!
         </p>
-        <table class="about__list">
+        <table class="about__table">
           <tbody>
             <tr>
               <th>日時</th>
@@ -34,9 +36,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="about__btn">
-          <a href="#registor" class="btn btn--small">お申し込み</a>
-        </div>
+        <a href="#registor" class="btn btn--small">お申し込み</a>
       </div>
     </div>
   </div>
