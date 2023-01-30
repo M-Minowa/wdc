@@ -9,7 +9,7 @@
             margin-bottom: 60px
         }
 
-        &:nth-child(2n){
+        &:nth-child(3n){
             flex-direction: row-reverse;
             @include sp{
                 // これ両方に書かないとダメなやつ？
