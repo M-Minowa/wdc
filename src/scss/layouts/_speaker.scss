@@ -1,0 +1,76 @@
+.speaker {
+    background: $gradient_bg;
+
+    &__unit {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child){
+            margin-bottom: 60px
+        }
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+
+        @include sp{
+            flex-direction: column-reverse;
+
+            &:not(:last-child){
+                margin-bottom: 40px
+            }
+
+            &:nth-child(even){
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    &__image {
+        width: calc(40% - 30px);
+        @include sp{
+            width: 100%;
+        }
+    }
+
+    &__description {
+        width: calc(60% - 30px);
+        @include sp{
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 4.2rem;
+        font-weight: bold;
+        color: $color_main;
+        margin-bottom: 44px;
+        @include sp{
+            margin: 20px 0 30px;
+            font-size: 3.2rem;
+        }
+
+        span {
+            display: block;
+        }
+
+        &--jp {
+            font-size: 1.8rem;
+            color: $text_color;
+            line-height: 1;
+            margin-top: 5px;
+            @include sp{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        @include sp{
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+    }
+}
