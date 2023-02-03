@@ -2,42 +2,43 @@
 
     &__table {
         width: 100%;
-        font-size: 2.2rem;
-        border-collapse: collapse;
+        border-bottom: solid 1px #740174;
+        display: flex;
+        padding: 40px 30px;
+        justify-content: space-between;
         @include sp{
             font-size: 1.8rem;
+            padding: 20px 0;
+        }
+    }
+
+    &__time {
+        font-size: 2.2rem;
+        font-weight: bold;
+        width: calc(25% - 30px);
+        @include sp{
+            width: calc(25% - 15px);
+        }
+    }
+
+    &__title {
+        color: $color_main;
+        width: calc(75% - 30px);
+        font-size: 2.2rem;
+        font-weight: normal;
+        @include sp{
+            width: calc(75% - 15px);
         }
 
-        tr {
-            border-bottom: solid 1px #740174;
-        }
-
-        th {
-            padding: 40px 30px;
-            font-weight: bold;
-            vertical-align: top;
+        span {
+            display: block;
+            font-size: 1.6rem;
+            color: $text_color;
+            line-height: 1.5;
+            margin-top: 20px;
             @include sp{
-                padding: 20px 0;
-            }
-        }
-
-        td {
-            padding: 40px 30px;
-            color: $color_main;
-            @include sp{
-                padding: 20px 0;
-            }
-
-            span {
-                display: block;
-                font-size: 1.6rem;
-                color: $text_color;
-                line-height: 1.5;
-                margin-top: 20px;
-                @include sp{
-                    font-size: 1.3rem;
-                    margin-top: 10px;
-                }
+                font-size: 1.3rem;
+                margin-top: 10px;
             }
         }
     }
