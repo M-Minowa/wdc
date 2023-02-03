@@ -12,7 +12,7 @@
  
 :where(html) {
 	-webkit-text-size-adjust: none; /* iOSのランドスケープでテキストが調整されないようにする */
-	color-scheme: dark light; /* ユーザーがダークテーマを好む場合、自動的にダークテーマになる */
+	// color-scheme: dark light; /* ユーザーがダークテーマを好む場合、自動的にダークテーマになる */
 }
  
 @supports not (min-block-size: 100dvb) {
@@ -35,10 +35,10 @@
 	-webkit-font-smoothing: antialiased; /* テキストのレンダリングを改善 */
 }
  
-:where(input, button, textarea, select) {
-	font: inherit; /* フォーム コントロールは親フォントを継承 */
-	color: inherit; /* カラーも継承 */
-}
+// :where(input, button, textarea, select) {
+// 	font: inherit; /* フォーム コントロールは親フォントを継承 */
+// 	color: inherit; /* カラーも継承 */
+// }
  
 :where(textarea) {
 	resize: vertical; /* テキストエリアの水平リサイズを無効に */
