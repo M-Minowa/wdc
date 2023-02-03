@@ -7,67 +7,71 @@
     <div class="registor__form">
       <form class="form">
         <div class="form__item">
-          <div class="form__title">
-            ご職業
-            <span class="form__required">*必須</span>
-          </div>
-          <span class="form__radio">
-            <input type="radio" id="companyEmployee" name="occupation" value="会社員">
-            <label for="companyEmployee">会社員</label>
-          </span>
-          <span class="form__radio">
-            <input type="radio" id="soleProprietorship" name="occupation" value="個人事業主">
-            <label for="soleProprietorship">個人事業主</label>
-          </span>
-          <span class="form__radio">
-            <input type="radio" id="inJobSeeking" name="occupation" value="求職中">
-            <label for="inJobSeeking">求職中</label>
-          </span>
-          <span class="form__radio">
-            <input type="radio" id="other" name="occupation" value="その他">
-            <label for="other">その他</label>
-          </span>
+          <fieldset class="form__job">
+            <legend class="form__title">
+              ご職業
+              <span class="form__required">*必須</span>
+            </legend>
+            <span class="form__radio">
+              <input type="radio" id="companyEmployee" name="occupation" value="会社員">
+              <label for="companyEmployee">会社員</label>
+            </span>
+            <span class="form__radio">
+              <input type="radio" id="soleProprietorship" name="occupation" value="個人事業主">
+              <label for="soleProprietorship">個人事業主</label>
+            </span>
+            <span class="form__radio">
+              <input type="radio" id="inJobSeeking" name="occupation" value="求職中">
+              <label for="inJobSeeking">求職中</label>
+            </span>
+            <span class="form__radio">
+              <input type="radio" id="other" name="occupation" value="その他">
+              <label for="other">その他</label>
+            </span>
+          </fieldset>
         </div>
         <div class="form__item">
-          <div class="form__name">
-            <label for="name" class="form__title">
+          <fieldset class="form__name">
+            <legend for="name" class="form__title">
               お名前
               <span class="form__required">*必須</span>
-            </label>
+            </legend>
             <input type="text" id="name" name="name" required class="form__input">
-          </div>
+          </fieldset>
         </div>
         <div class="form__item">
-          <div class="form__email">
-            <label for="email" class="form__title">
+          <fieldset class="form__email">
+            <legend for="email" class="form__title">
               メールアドレス
               <span class="form__required">*必須</span>
-            </label>
+            </legend>
             <input type="email" id="email" name="email" required class="form__input">
-          </div>
+          </fieldset>
         </div>
         <div class="form__item">
-          <div class="form__tel">
-            <label for="tel" class="form__title">
+          <fieldset class="form__tel">
+            <legend for="tel" class="form__title">
               電話番号
               <span class="form__note">（半角数字ハイフンなし）</span>
-            </label>
+            </legend>
             <input type="tel" id="tel" name="tel" class="form__input">
-          </div>
+          </fieldset>
         </div>
         <div class="form__item">
-          <label for="comment" class="form__title">
-            スピーカーに質問したいこと
-            <span class="form__required">*必須</span>
-          </label>
-          <textarea id="comment" name="comment" placeholder="ご自由にお書きください" class="form__comment"></textarea>
+          <fieldset class="comment">
+            <legend for="comment" class="form__title">
+              スピーカーに質問したいこと
+              <span class="form__required">*必須</span>
+            </legend>
+            <textarea id="comment" name="comment" placeholder="ご自由にお書きください" class="form__comment"></textarea>
+          </fieldset>
         </div>
         <div class="form__item">
-          <div class="form__category">
-            <label for="category" class="form__title">
+          <fieldset class="form__category">
+            <legend for="category" class="form__title">
               WDCをどちらでお知りになりましたか？
               <span class="form__required">*必須</span>
-            </label>
+            </legend>
             <select name="category" id="category" required class="form__input">
               <option value="">選択してください</option>
               <option value="Google/Yahoo検索">Google/Yahoo検索</option>
@@ -76,11 +80,11 @@
               <option value="友人や知人">友人や知人</option>
               <option value="その他">その他</option>
             </select>
-          </div>
+          </fieldset>
         </div>
-        <div class="form__btn">
+        <fieldset class="form__btn">
           <button type="submit" class="btn">送信する</button>
-        </div>
+        </fieldset>
       </form>
     </div>
   </div>
