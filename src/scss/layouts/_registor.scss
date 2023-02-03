@@ -1,0 +1,86 @@
+.registor {
+    background-image: url(../../images/bg.jpg);
+
+    &__form {
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 90px;
+        border: 5px solid $color_main;
+        border-radius: 20px;
+        background-color: #1a1a1a;
+        @include sp{
+            padding: 30px;
+        }
+    }
+}
+
+.form {
+    color: $text_color;
+
+    &__item {
+
+        &:not(:last-child){
+            margin-bottom: 36px;
+        }
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        line-height: 2;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    &__required {
+        font-size: 1.2rem;
+        margin-left: 10px;
+        color: $color_main;
+    }
+
+    &__radio {
+        margin-right: 30px;
+        @include sp{
+            display: block;
+            &:not(:last-child){
+                margin: 0 0 16px;
+            }
+        }
+    }
+
+    &__input {
+        width: 300px;
+        padding: 8px;
+        border-radius: 6px;
+        @include sp{
+            width: 100%;
+        }
+    }
+
+    &__note {
+        font-size: 1.2rem;
+    }
+
+    &__textarea {
+        width: 600px;
+        height: 200px;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 8px;
+        @include sp{
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        button {
+            border: none;
+        }
+    }
+}
