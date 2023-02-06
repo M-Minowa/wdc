@@ -11,12 +11,15 @@
     }
 }
 
-.pege-top {
-    display: none;
+.page-top {
+    display: block;
     position: fixed;
     right: 40px;
     bottom: 45px;
     z-index: 1;
+    transition: all ease 0.3s; // なめらかに表示したいのでtransitionを追加します
+    opacity: 0; // displayだとtransitionが効かないためopacityで制御します
+    visibility: hidden; // opacityだけだと透明化してるだけで要素は表示されてるのでvisibilityで完全に非表示にします
 
     &__link {
         display: flex;
@@ -30,10 +33,22 @@
         border-radius: 50%;
         background: linear-gradient(135deg, #c41a7f 0%, #664bbf 100%);
         cursor: pointer;
+        @include sp{
+            width: 50px;
+            height: 50px;
+        }
     }
+}
+
+.page-top.is-active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .material-symbols-outlined {
     font-family: 'Material Icons Round';
     font-size: 4rem;
+    @include sp{
+        font-size: 2.4rem;
+    }
 }

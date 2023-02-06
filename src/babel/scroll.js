@@ -3,14 +3,11 @@
 
 // scroll
 // ---------------------------------------- //
+
 window.addEventListener("scroll", function () {
-  const elm = document.querySelector(".pege-top");
-  const scroll = window.pageYOffset;
-  if (scroll > 100) {
-    elm.style.display = "block";
-    // console.log(scroll);
+  if (100 < window.scrollY) {
+    document.getElementById("js-to-top").classList.add("is-active");
   } else {
-    elm.style.display = "none";
-    // console.log(scroll);
+    document.getElementById("js-to-top").classList.remove("is-active");
   }
 });
