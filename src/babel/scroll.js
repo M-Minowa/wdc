@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
   const scroll = window.pageYOffset;
   if (scroll > 100) {
     elm.style.display = "block";
-    console.log(scroll);
+    // console.log(scroll);
   } else {
     elm.style.display = "none";
     // console.log(scroll);
