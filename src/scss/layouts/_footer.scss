@@ -1,0 +1,38 @@
+.footer {
+    padding: 70px 0;
+
+    &__copyright {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        @include sp{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.pege-top {
+    position: fixed;
+    right: 40px;
+    bottom: 45px;
+    z-index: 1;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        color: #fff;
+        text-align: center;
+        transition: opacity 0.3s;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #c41a7f 0%, #664bbf 100%);
+        cursor: pointer;
+    }
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons Round';
+    font-size: 4rem;
+}

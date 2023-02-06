@@ -7,24 +7,25 @@
 {% endif %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>グランドチャンピオンズトロフィー | JD.LEAGUE（JDリーグ）公式サイト | 女子ソフトボール新リーグ 2022年春開幕</title>
-  <meta name="description" content="">
-  <meta property="og:title" content="グランドチャンピオンズトロフィー | JD.LEAGUE（JDリーグ）公式サイト | 女子ソフトボール新リーグ 2022年春開幕">
+  <title>WDC</title>
+  <meta name="description" content="Web Design Conference（WDC）は、最新のWebデザインのトレンドやワーキングスタイルを紹介するイベントを開催。お気軽にご参加ください。">
+  <meta property="og:title" content="WDC">
   {% if ( metadata.url === '' ) %}
   <meta property="og:type" content="website"/>
   {% else %}
   <meta property="og:type" content="article"/>
   {% endif %}
   <meta property="og:description" content="">
-  <meta property="og:url" content="https://jdleague.jp/special/tasaki/">
-  <meta property="og:image" content="https://jdleague.jp/images/common/tasaki_ogp_image.png">
-  <meta property="og:site_name" content="JD.LEAGUE（JDリーグ）公式サイト">
+  <meta property="og:url" content="wdc-site.netlify.app">
+  <meta property="og:image" content="https://webdesigner-go.com/images/common/ogp.png">
+  <meta property="og:site_name" content="WDC">
   <link rel="icon" href="images/common/favicon.png">
   <link rel="canonical" href="">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   {% block css %}{% endblock %}
   <script> </script> <!-- Chromeのページロード時のtransition動作バグ対策 -->
 </head>
@@ -35,7 +36,7 @@
     <main class="contents">
       {% block body %}{% endblock %}
     </main>
-    <!-- {% include "_templates/_layouts/_footer.html" %} -->
+    {% include "_templates/_layouts/_footer.html" %}
   </div>
   {% include "_templates/_foundation/_js.html" %}
   {% block js %}{% endblock %}
