@@ -4,10 +4,12 @@
 // scroll
 // ---------------------------------------- //
 
+const toTop = document.getElementById("js-to-top");
+
 window.addEventListener("scroll", () => {
   if (100 < window.scrollY) {
-    document.getElementById("js-to-top").classList.add("is-active");
+    toTop.classList.add("is-active");
   } else {
-    document.getElementById("js-to-top").classList.remove("is-active");
+    toTop.classList.remove("is-active");
   }
 });
