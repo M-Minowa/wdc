@@ -4,7 +4,7 @@
 // scroll
 // ---------------------------------------- //
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   if (100 < window.scrollY) {
     document.getElementById("js-to-top").classList.add("is-active");
   } else {
