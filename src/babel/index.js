@@ -1,5 +1,5 @@
 'use strict';
 
-const modal = require('./modal.js');
+const scroll = require("./scroll.js");
 
-modal;
+scroll;
